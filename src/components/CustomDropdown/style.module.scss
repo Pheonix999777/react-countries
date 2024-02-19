@@ -1,0 +1,110 @@
+.dropdown {
+  width: 180px;
+  max-width: 200px;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  background-color: #fff;
+  color: #111517;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+  user-select: none;
+  cursor: pointer;
+}
+
+.header__dark {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  background: rgba(43, 56, 68, 1);
+  color: #fafafa;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+  user-select: none;
+  cursor: pointer;
+}
+
+.options {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+}
+
+.options__dark {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 5px;
+  background: rgba(43, 56, 68, 1);
+  color: #fafafa;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+}
+
+.dropdown.open .options {
+  display: block;
+}
+
+.dropdown.open .options__dark {
+  display: block;
+}
+
+.arrowIcon {
+  transition: transform 0.3s;
+}
+
+.dropdown.open .arrowIcon {
+  transform: rotate(180deg);
+}
+
+.optionBtn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  padding: 4px 24px;
+  &:hover {
+    background-color: #f5f5f5;
+  }
+}
+
+.optionBtn__dark {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  padding: 4px 24px;
+  &:hover {
+    background: rgb(32, 44, 54);
+  }
+}
